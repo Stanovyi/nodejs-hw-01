@@ -4,7 +4,7 @@ import { readContacts } from "../utils/readContacts.js";
 
 const generateContacts = async (number) => {
   const data = JSON.parse(await readContacts());
-  let contacts = Array(number)
+  const contacts = Array(number)
     .fill(undefined)
     .map(() => createFakeContact());
 
